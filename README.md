@@ -1,4 +1,4 @@
-# Nvidia_Stock_Prediction
+# Nvidia Stock Prediction
 ![NVIDIA](images/nvidia_logo.jpg)<br>
 **Authors**: [Kibae Kim](mailto:rlqo7376@gmail.com)
 
@@ -88,11 +88,9 @@ Overall, the model seems to be a good fit. So, I use it to forecast.
 #### Building ARIMA
 Even though, Nvidia's stock closing price was in the 95% confidence interval, Prediction of ARIMA model order of (2, 1, 0) on Nvidia stock closing price was not closed to true value.
 
-Overall, ARIMA of (2, 1, 0) performed best with:
+Overall, ARIMA of (2, 1, 0) performed with:
  - RMSE: 0.13
  - %RMSE: 0.0203
- - Model assumed steady, but in reality the stock increased
- - decrease from most recent lag likely have large impact on prediction
 ![ARIMA_prediction_result](images/ARIMA_prediction_result.png)<br>
 
 ### ARIMA with Exogenous Variables
@@ -114,11 +112,9 @@ Overall, the model seems to be a good fit. So, I use it to forecast.
 #### Building ARIMA with Exogenous Variables
 Fitting ARIMA with exogenous variables model orders of (3, 1, 0) on Nvidia stock closing price resulted in much closer prediction in true value than ARIMA model.
 
-Overall, ARIMA of (3, 1, 0) performed best with:
+Overall, ARIMA of (3, 1, 0) performed with:
  - RMSE: 0.05
  - %RMSE: 0.0086
- - Model assumed steady, but in reality the stock increased
- - decrease from most recent lag likely have large impact on prediction
 ![ARIMA_exo_prediction_result](images/ARIMA_exo_prediction_result.png)<br>
 
 
