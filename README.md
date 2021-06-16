@@ -134,9 +134,9 @@ Trading year 2020 had market movements, especially with COVID-19 crash but fortu
 ## Repository Structure
 
 ```
-├──  data                                # All the CSV files used for the notebook.
-├── images                              # All visualization and images of the project
-├── COVID19_Detection_project_presentation.pdf     <- PDF version of project presentation
-├── Nvidia_Stock_Prediction.ipynb       # Noteboooks used to build the project
-├── README.md                           # Top-level README
+├──  data                                            # All the CSV files used for the notebook.
+├── images                                           # All visualization and images of the project
+├── Nvidia_Stock_Prediction.ipynb                    # Noteboooks used to build the project
+├── COVID19_Detection_project_presentation.pdf       # PDF version of project presentation
+├── README.md                                        # Top-level README
 ```
