@@ -2,20 +2,20 @@
 ![NVIDIA](images/nvidia_logo.jpg)
 **Authors**: [Kibae Kim](mailto:rlqo7376@gmail.com)
 
-## Overview
-Using data pulled out from Kaggle, we retrieved chest X-Ray of normal people & COVID-19 patients:<br>
-Data Imported from = https://www.kaggle.com/donjon00/covid19-detection <br>
-    *NORMAL IMAGES = 11,767 Images<br>
-    *COVID-19 IMAGES = 3,616 Images
-***
-Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease has since spread worldwide, leading to an ongoing pandemic.
-So, we built a deep learning model to detect people who infected to COVID-19 virus by using their lung X-ray data from Kaggle. This project will help hospitals figure out infected people when they don’t have COVID test kit.
-
+Nvidia Corporation, an American multinational technology company designs graphics processing units (GPUs) for the gaming and professional markets, as well as system on a chip units (SoCs) for the mobile computing and automotive market. Its primary GPU line, labeled "GeForce", is in direct competition with the GPUs of the "Radeon" brand by Advanced Micro Devices (AMD)
 
 ## Business Problem
 ***
-Hospitals are short with COVID-19 test kits, and they are looking for alternative ways to detect COVID-19 infection status.
-We are looking to build a model which can detect COVID-19 just by looking at Chest X-ray images.
+It is common in financial industry to use time series forecasting to track the price of a stock over time. This can be tracked in the short term, such as the price of a stock in one hour during a business day, or in the long term, such as the price of a stock on the last day of each month. Stock markets are very unpredictable and geopolitical changes can affect the stock trend of stocks in the stock market. Recently, we faced 2020 stock market crash, caused by Covid-19, that began on 20 February 2020 and ended on 7 April. Therefore, it is very difficult to perform reliable trend analysis on with previous time series forecasting.
+
+2021 is called the year of cryptocurrency. Cryptocurrency is a digital currency that can be used to purchase goods and services, but it uses an online ledger with strong encryption to secure your online transactions. Much of the interest in these unregulated currencies is that speculators sometimes trade for profit to increase their prices. The popularity of cryptocurrency caused a shortage in the graphics card market. At the same time, it leads increasing of a grapic card supplier, Nvidia.
+
+I want to build a reliable time series forecasting model that predict Nvidia's stock price after 2020 stock market crash. Therefore, this project aims to provide a updated time series forecasting for investment bankings to predict better Nvidia's future stock price.
+
+
+## Overview
+***
+The data for the prediction was collected using [Yahoo Finance](https://finance.yahoo.com/) and [Statista](https://www.statista.com/statistics/274005/market-share-of-global-graphics-card-shipments-since-3rd-quarter-2010/) with support of pandas, numpy, and datetime library of Python. [Nvidia's closing stock price](https://finance.yahoo.com/quote/NVDA/history?p=NVDA) is main dependent variable which predicted in this project, and [AMD's previous day closing stock price](https://finance.yahoo.com/quote/AMD?p=AMD&.tsrc=fin-srch) and [Google trend data](https://trends.google.com/trends/explore?q=nvidia&geo=US) were chosen for exogenous variables. For time series forecasting model, ARIMA, ARIMA with exogenous variables, LSTM, and Prophet were tested on daily closing price of Nvidia.
 
 
 ## Modeling
