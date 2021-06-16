@@ -1,5 +1,5 @@
 # Nvidia_Stock_Prediction
-![COVID](images/COVID19.png)
+![NVIDIA](images/nvidia_logo.jpg)
 **Authors**: [Kibae Kim](mailto:rlqo7376@gmail.com)
 
 ## Overview
