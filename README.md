@@ -55,14 +55,40 @@ The model will be built with ARIMA (AutoRegressive Integrated Moving Average) mo
 6. Compare each models performance
     - RMSE
     - %RMSE
+    
+### Final model - Prophet
+
+To prepare the ARIMA with exogenous variables model for forecasting on our data, I used yearly, daily seasonality feature.
+
+#### Result of Prophet
+Overall, LSTM performed with:
+ - RMSE: 22.05
+ - %RMSE: 0.039
+![Prophet_result](images/prophet_result.png)<br>
+
+#### Expected Profit
+If you buy and sell a stock at the change points, the expected return is 58% in this period.
+- 2021-01-19 - Buy     - Actual Price: 521.01
+- 2021-02-17 - Sell    - Actual Price: 596.24 +14.44%
+- 2021-03-17 - Buy     - Actual Price: 533.65
+- 2021-04-21 - Sell    - Actual Price: 614.42 +15.14%
+- 2021-05-06 - Buy     - Actual Price: 580.92
+- 2021-06-04 - Current - Actual Price: 703.13 +21.04%
+
+#### Future Prediction
+Nvidia stock closing price will be around $965 in 1 year.
+![Prophet_prediction](images/prophet_future.png)<br>
+
+
 
 
 ## Conclusion
-Trading year 2020 had market movements, especially with COVID-19 crash but fortunately, its effect on Nvidia stock closing price was low and Nvidia recovered its stock closing price quickly. Overall, the prediction made in this project yielded good insights to market trend using ARIMA with exogenous variables to predict Nvidia future stock closing price. The project will help investment banks to predict Nvidia's future stock prices.
+Trading year 2020 had market movements, especially with COVID-19 crash but fortunately, its effect on Nvidia stock closing price was low and Nvidia recovered its stock closing price quickly. During test dataset period, expected profit from trading at the change points is 58% and expected stock price on 6/4/2022 is $965.Overall, the prediction made in this project yielded good insights to market trend using Prophet with exogenous variables to predict Nvidia future stock closing price. The project will help investment banks to predict Nvidia's future stock prices.
+However, there will be overfitting since I used yearly and daily seasonality feature.
 
 
 ## Future Work
-1. Test with LSTM and Prophet model
+1. How to overcome overfitting which is caused by seasonality
 2. Find other exogenous variables
 
 
