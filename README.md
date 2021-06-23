@@ -6,7 +6,7 @@ Nvidia Corporation, an American multinational technology company designs graphic
 
 
 ## Business Problem
-The popularity of cryptocurrency caused a shortage in the graphics card market, and it leads increasing of stock price of a graphics card supplier, Nvidia. 
+The popularity of cryptocurrency caused a shortage in the graphics card market, and it led increasing of stock price of a graphics card supplier, Nvidia. 
 This project aims to provide an updated time series forecasting for investment banks to predict better Nvidia future stock price.
 
 
