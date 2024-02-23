@@ -95,7 +95,7 @@ However, there will be overfitting since I used yearly and daily seasonality fea
 ## Repository Structure
 
 ```
-├──  data                                            # All the CSV files used for the notebook.
+├── data                                             # All the CSV files used for the notebook.
 ├── images                                           # All visualization and images of the project
 ├── Nvidia_Stock_Prediction.ipynb                    # Noteboooks used to build the project
 ├── COVID19_Detection_project_presentation.pdf       # PDF version of project presentation
